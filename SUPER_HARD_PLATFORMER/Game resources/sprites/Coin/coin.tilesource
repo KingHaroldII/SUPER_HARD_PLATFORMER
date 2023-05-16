@@ -1,0 +1,25 @@
+image: "/Game resources/sprites/Coin/coin sprite.png"
+tile_width: 32
+tile_height: 32
+tile_margin: 0
+tile_spacing: 0
+collision: "/Game resources/sprites/Coin/coin sprite.png"
+material_tag: "tile"
+convex_hulls {
+  index: 0
+  count: 16
+  collision_group: "Coin"
+}
+collision_groups: "Coin"
+animations {
+  id: "Coin"
+  start_tile: 1
+  end_tile: 1
+  playback: PLAYBACK_ONCE_FORWARD
+  fps: 30
+  flip_horizontal: 0
+  flip_vertical: 0
+}
+extrude_borders: 2
+inner_padding: 0
+sprite_trim_mode: SPRITE_TRIM_MODE_OFF

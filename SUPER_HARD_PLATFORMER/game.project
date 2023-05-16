@@ -1,0 +1,26 @@
+[bootstrap]
+main_collection = /loader/loader.collectionc
+
+[script]
+shared_state = 1
+
+[display]
+width = 1024
+height = 768
+
+[android]
+input_method = HiddenInputField
+
+[project]
+title = SUPER_HARD_PLATFORMER
+publisher = KingHaroldTheSecond Studios
+developer = KingHaroldII
+version = 1.2
+
+[graphics]
+default_texture_min_filter = nearest
+default_texture_mag_filter = nearest
+
+[tilemap]
+max_tile_count = 20000
+

@@ -1,0 +1,58 @@
+local input_collected = hash("Collect")
+
+
+function init(self)
+	
+	msg.post(".", "acquire_input_focus")
+	
+end
+
+--function on_message(self, message_id, message, sender)
+	
+	--if message_id == hash("collision_response") then
+		
+		--if message.other_group == hash("player")then
+			-- send a message to the player script to implement the coin count
+			--msg.post("/player", "increment_score")
+
+			-- destroy the coin when collected
+			--go.delete()
+		--end
+	--end
+--end
+
+--local coin_factory_url = msg.url("/coin_factory")
+
+--function spawn_coin(self)
+	--local position = vmath.vector3(211, 194, 1)
+	--local rotation = vmath.quat_rotation_z(math.random() * math.pi * 2)
+	--factory.create(coin_factory_url, position, rotation)
+--end
+
+--spawn_coin(self)
+
+function update(self, dt)
+	-- Add update code here
+	-- Learn more: https://defold.com/manuals/script/
+	-- Remove this function if not needed
+end
+
+function on_message(self, message_id, message, sender)
+
+	if message_id == delete_coin then 
+		go.delete()
+	end
+	if message_id == hash("collision_response") then
+		go.delete()
+	end
+end
+
+
+function on_input(self, action_id, action)
+
+	msg.post(".", "acquire_input_focus")
+	
+	if action_id == input_collected then
+		go.delete()
+	end
+end

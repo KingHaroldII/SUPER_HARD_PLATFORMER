@@ -1,0 +1,4 @@
+tile_set: "/Game resources/sprites/Player/Player.atlas"
+default_animation: "New Piskel"
+material: "/builtins/materials/sprite.material"
+blend_mode: BLEND_MODE_ALPHA

@@ -1,0 +1,4 @@
+tile_set: "/Game resources/sprites/Coin/Coin.atlas"
+default_animation: "coin sprite"
+material: "/builtins/materials/sprite.material"
+blend_mode: BLEND_MODE_ALPHA
